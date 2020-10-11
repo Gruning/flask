@@ -18,5 +18,5 @@ def count_punct(text):
     return round(count/len(text) - text.count(" "),3)*100 
 
 app = flask(__name__)
-data = pd.read_csv("sentiment.tsv".sep ='\t')
+data = pd.read_csv("sentiment.tsv",sep ='\t')
     
